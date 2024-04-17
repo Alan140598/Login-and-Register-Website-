@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    font-style: normal;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 7rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome{
+    font-size: 2rem;
+    color: blue;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 450;
+    margin-left: 3rem;
+    color: black;
+}
+
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    width: 100%;
+    height: 0.2rem;
+    background: white;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    transform-origin: right;
+    transform: scaleX(0);
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
+    transform: ;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.navigation .btn-login{
+    width: 6rem;
+    height: 2.3rem;
+    background: transparent;
+    border: 2.5px solid white;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 500;
+    margin-left: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+}
+
+.navigation .btn-login:hover{
+    background: white;
+    color: black;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2.5px solid white;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    backdrop-filter: blur(1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .box-login{
+    width: 100%;
+    padding: 3rem;
+}
+
+.wrapper .close-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    font-size: 2.5rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-login h2{
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    border-bottom: 0.2rem solid black;
+    margin: 2rem 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -0.4rem;
+
+}    
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+    padding: 0 2rem 0 0.4rem;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 0.5rem;
+    font-size: 0.9rem;
+    color: black;
+    line-height: 3.5rem;
+}
+
+.rememberMe{
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 500;
+    margin: -1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rememberMe label input{
+    accent-color: black;
+    margin-right: 0.2rem;
+}
+
+.rememberMe a{
+    color: black;
+    text-decoration: none;
+}
+
+.rememberMe a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 3rem;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.login-register{
+    font-size: 0.9rem;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 2rem 0 0.8rem;
+}
+
+.login-register p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
