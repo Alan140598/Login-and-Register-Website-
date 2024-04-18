@@ -22,9 +22,11 @@
 
     <main>
         <div class="wrapper">
+            <!-- Close Icon -->
             <span class="close-icon">
                 <ion-icon name="close-circle"></ion-icon>
             </span>
+            <!-- Login -->
             <div class="box-login">
                 <h2>Login</h2>
                 <form action="#">
@@ -51,6 +53,44 @@
                     <button type="submit" class="btn">Login</button>
                     <div class="login-register">
                         <p>Don't create an account?<a href="#" class="register-link"> Register Here</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register -->
+            <div class="box-register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <!-- Input box for username -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person-add"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <!-- Input box for email -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <!-- Input box for password -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="rememberMe">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Have already an account?<a href="#" class="login-link"> Login Here</a></p>
                     </div>
                 </form>
             </div>

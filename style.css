@@ -122,11 +122,90 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: height .3s ease, transform .5s ease ;
+    -webkit-transition: height .3s ease, transform .5s ease ;
+    -moz-transition: height .3s ease, transform .5s ease ;
+    -ms-transition: height .3s ease, transform .5s ease ;
+    -o-transition: height .3s ease, transform .5s ease ;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.wrapper.active{
+    height: 30rem;
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
 .wrapper .box-login{
     width: 100%;
     padding: 3rem;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.wrapper.active .box-login{
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transform: translateX(-25rem);
+    -webkit-transform: translateX(-25rem);
+    -moz-transform: translateX(-25rem);
+    -ms-transform: translateX(-25rem);
+    -o-transform: translateX(-25rem);
+}
+
+.wrapper .box-register h2{
+    text-align: center;
+}
+
+.wrapper .box-register{
+    position: absolute;
+    transition: none;
+    transform: translateX(25rem);
+    -webkit-transform: translateX(25rem);
+    -moz-transform: translateX(25rem);
+    -ms-transform: translateX(25rem);
+    -o-transform: translateX(25rem);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
+.wrapper.active .box-register{
+    width: 100%;
+    padding: 3rem;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
 
 .wrapper .close-icon{
@@ -141,6 +220,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .box-login h2{
